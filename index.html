@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="HandheldFriendly"                       content="True"/>
+	<meta name="MSThemeCompatible"                      content="no"/>
+	<meta name="apple-mobile-web-app-capable"           content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style"  content="translucent black"/>
+	<meta name="msapplication-navbutton-color"          content="translucent black"/>
+	<meta name="mssmarttagspreventparsing"              content="true"/>
+	<meta name="theme-color"                            content="#b1cff4"/>
+	<meta http-equiv="Page-Enter"                       content="RevealTrans(Duration=1.0,Transition=1)"/>
+	<meta http-equiv="Page-Exit"                        content="RevealTrans(Duration=1.0,Transition=1)"/>
+	<meta name="target"                                 content="all"/>
+	<meta name="audience"                               content="all"/>
+	<meta name="coverage"                               content="Worldwide"/>
+	<meta name="distribution"                           content="Global">
+	<meta name="og:type"                                content="website"/>
+	<meta name="rating"                                 content="safe for kids"/>
+	<title>Just_a_Mango</title>
+	<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/68585097?v=4">
+	<meta name="keywords" content="development, programming language, python, java, c#, cs, csharp, mango, just_a_mango, portfolio, cpp, c++, c, developer, designer, github, projects, works, html, css"/>
+	<meta name="description" content="Just_a_Mango's portfolio: contains my projects as well as a short description of who I am"/>
+	<meta name="subject" content="Just_a_Mango's portfolio">
+	<meta name="language" content="EN">
+	<meta name="robots" content="index"/>
+	<meta name="revised" content="Friday, January 28th, 2022, 4:20 pm" />
+	<meta name="abstract" content="Portfolio of a designer and developer">
+	<meta name="topic" content="Developer">
+	<meta name="summary" content="Portfolio of a designer and developer">
+	<meta name="author" content="Just_a_Mango, justamango@altmails.com">
+	<meta name="designer" content="Just_a_Mango">
+	<meta name="reply-to" content="justamango@altmails.com">
+	<meta name="owner" content="Just_a_Mango">
+	<meta name="url" content="https://just-a-mango.github.io/">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body, html {
+	background-color: #202023;
+	height: 100%;
+	text-align: center;
+	align-items:center;
+}
+.just-a-mango {
+	color: white;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-weight: bold;
+	cursor: pointer;
+}
+.just-a-mango-image {
+	width: 32px;
+	height: 32px;
+	margin-top: 5.5%;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: -14%;
+	cursor: pointer;
+}
+.navbar {
+	position: fixed;
+	display: flex;
+	-webkit-box-align: center;
+	margin-left: 30%;
+}
+.works {
+	color: white;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	margin-left: 5vw;
+	font-weight: 500;
+	cursor: pointer;
+}
+.works:hover {
+	text-decoration: underline;
+}
+.github {
+	color: white;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	margin-left: 1vw;
+	font-weight: 500;
+	cursor: pointer;
+}
+.github:hover {
+	text-decoration: underline;
+}
+.content {
+	height: 100vh;
+}
+.works-section {
+	color: white;
+}
+.project {
+	width: 231px;
+	height: 128.33px;
+	background-color: #1b202a;
+	border: 0;
+	border-radius: 10px;
+	display: inline-block !important;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.project:hover {
+	-webkit-box-shadow: 0px 0px 10px 3px rgba(46, 46, 46, 0.05); 
+	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.05);
+}
+.margin-on-right {
+	margin-right: 20px;
+}
+.margin-on-left {
+	margin-left: 20px;
+}
+.margin-on-top {
+	margin-top: 40px;
+}
+.my-works {
+	color: white;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+}
+.title {
+	color: white;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+}
+@media (max-width: 540px) {
+	.margin-on-right {
+		margin-right: 0px;
+	}
+	.margin-on-left {
+		margin-left: 0px;
+	}
+	.margin-on-top {
+		margin-top: 0px;
+	}
+	.project {
+		margin-top: 40px;
+	}
+	.my-works {
+		font-size: 27px;
+	}
+}
+.description {
+	color: #FFFFFF;
+	font-family: sans-serif;
+}
+</style>
+<body>
+<div class="navbar">
+	<img id="icon" src="https://avatars.githubusercontent.com/u/68585097?v=4" class="just-a-mango-image" onmouseover="document.getElementById('mango').style.textDecoration = 'underline'" onmouseout="document.getElementById('mango').style.textDecoration = 'none'">
+	<h4 id="mango" class="just-a-mango" onmouseover="document.getElementById('mango').style.textDecoration = 'underline'" onmouseout="document.getElementById('mango').style.textDecoration = 'none'">Just_a_Mango</h4>
+	<h4 class="works" id="works">Works</h4>
+	<h4 class="github" onclick="window.open('https://github.com/just-a-mango');">Github</h4>
+</div>
+<div id="my-projects">
+	<br><br><br><br><br><br><br><br>
+	<h1 class="my-works">My works</h1>
+	<div class="project margin-on-right" style="background-color: transparent" onclick="window.open('https://just-a-mango.github.io/mangoweb/')">
+		<div class="project">
+			<img src="./mango_bg.png" width="100%" height="100%" alt="Mango programming language" style="border-radius: 10px; border: 0px; padding: 0px; margin: 0px;">
+		</div>
+		<p class="title">🥭Mango🥭<p>
+		<p class="description">A WIP next-gen programming language</p>
+	</div>
+	<div class="project margin-on-left" style="background-color: transparent">
+		<div class="project"></div>
+		<p class="title">FabricStarterGen<p>
+		<p class="description">A program that generates a starter fabric mod for modders</p>
+	</div><br>
+	<div class="project margin-on-right margin-on-top" style="background-color: transparent">
+		<div class="project">
+			<img src="./enlightened_bg.png" width="100%" height="100%" alt="Mango programming language" style="border-radius: 10px; border: 0px; padding: 0px; margin: 0px;">
+		</div>
+		<p class="title">Enlightened<p>
+		<p class="description">An open-world action-adventure BOTW-like game</p>
+	</div>
+	<div class="project margin-on-left margin-on-top" style="background-color: transparent">
+		<div class="project"></div>
+		<p class="title">Ball Madness<p>
+		<p class="description">A retro-style platformer game where you're a ball</p>
+	</div>
+</div>
+</body>
+</html>
