@@ -158,6 +158,41 @@ body, html {
 .big-image {
 	border-radius: 50%;
 }
+.maybe-dark {
+	color: white;
+}
+.da-mail {
+	color: white;
+}
+@media (prefers-color-scheme: dark) {
+	body,html {
+		background-color: white;
+	}
+	.just-a-mango {
+		color: black;
+	}
+	.github {
+		color: black;
+	}
+	.works {
+		color: black;
+	}
+	.description {
+		color: black;
+	}
+	.title {
+		color: black;
+	}
+	.my-works {
+		color: black;
+	}
+	.maybe-dark {
+		color: black;
+	}
+	.da-mail {
+		color: rgb(0, 30, 95);
+	}
+}
 </style>
 <body>
 <div class="navbar">
@@ -166,9 +201,9 @@ body, html {
 	<h4 class="works" id="works" onclick="switch_to_works()">Works</h4>
 	<h4 class="github" onclick="window.open('https://github.com/just-a-mango');">Github</h4>
 </div>
-<div id="my-projects">
+<div id="my-projects" class="maybe-dark">
 	<br><br><br><br><br><br><br><br>
-	<div style="color: white; font-family: 'Poppins', sans-serif;">
+	<div style="font-family: 'Poppins', sans-serif;" class="maybe-dark">
 	<p><h1>Hi 👋, I&#39;m Just_a_Mango</h1></p>
 	<h3>A developer and space-passionate</h3>
 	<ul>
@@ -176,7 +211,7 @@ body, html {
 	<p>🔭 I’m currently working on:  <a href="https://just-a-mango.github.io/mangoweb/" style="color: #4eb1e2; text-decoration: none;"><strong>Mango</strong>, my own programming language</a>  </p>
 	<p>🌱 I’m currently learning <strong>C#, C++, and Java</strong></p>
 	<p>👨‍💻 All of my projects are available <a href="https://github.com/Just-A-Mango?tab=repositories" style="color: #4eb1e2; text-decoration: none;"><strong>here</strong></a></p>
-	<p>📫 How to reach me: <a href="mailto: justamango@altmails.com" style="color: white; text-decoration: none;"><strong>justamango@altmails.com</strong></a></p>
+	<p>📫 How to reach me: <a href="mailto: justamango@altmails.com" style="text-decoration: none;" class="da-mail"><strong>justamango@altmails.com</strong></a></p>
 	</ul>
 	<br><br>
 	<p><h3 >Languages and Tools:</h3></p>
