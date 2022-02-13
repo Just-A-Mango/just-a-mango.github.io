@@ -1,321 +1,220 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="HandheldFriendly"                       content="True"/>
-	<meta name="MSThemeCompatible"                      content="no"/>
-	<meta name="apple-mobile-web-app-capable"           content="yes"/>
-	<meta name="apple-mobile-web-app-status-bar-style"  content="translucent black"/>
-	<meta name="msapplication-navbutton-color"          content="translucent black"/>
-	<meta name="mssmarttagspreventparsing"              content="true"/>
-	<meta name="theme-color"                            content="#b1cff4"/>
-	<meta http-equiv="Page-Enter"                       content="RevealTrans(Duration=1.0,Transition=1)"/>
-	<meta http-equiv="Page-Exit"                        content="RevealTrans(Duration=1.0,Transition=1)"/>
-	<meta name="target"                                 content="all"/>
-	<meta name="audience"                               content="all"/>
-	<meta name="coverage"                               content="Worldwide"/>
-	<meta name="distribution"                           content="Global">
-	<meta name="og:type"                                content="website"/>
-	<meta name="rating"                                 content="safe for kids"/>
-	<title>Just_a_Mango</title>
-	<link rel="icon" type="image/x-icon" href="./ico.jpg">
-	<meta name="keywords" content="development, programming language, python, java, c#, cs, csharp, mango, just_a_mango, portfolio, cpp, c++, c, developer, designer, github, projects, works, html, css"/>
-	<meta name="description" content="Just_a_Mango's portfolio: contains my projects as well as a short description of who I am"/>
-	<meta name="subject" content="Just_a_Mango's portfolio">
-	<meta name="language" content="EN">
-	<meta name="robots" content="index"/>
-	<meta name="revised" content="Friday, January 28th, 2022, 4:20 pm" />
-	<meta name="abstract" content="Portfolio of a developer">
-	<meta name="topic" content="Developer">
-	<meta name="summary" content="Portfolio of a developer">
-	<meta name="author" content="Just_a_Mango, justamango@altmails.com">
-	<meta name="designer" content="Just_a_Mango">
-	<meta name="reply-to" content="justamango@altmails.com">
-	<meta name="owner" content="Just_a_Mango">
-	<meta name="url" content="https://just-a-mango.github.io/">
+    <meta charset="utf-8" name="description" content="A programming language with the purpose of being easy to understand and fast">
+    <meta name="keywords" content="python, java, language, programming-language, fast, development, csharp, cross-platform, easy-to-use, work-in-progress, terminal-based, beginner-friendly, homemade">
+    <meta name="language" content="EN">
+    <meta name="og:title" content="Mango"/>
+    <meta name="topic" content="Programming languages">
+    <meta name="summary" content="Mango, a next-gen programming language that aims at being easy and fast">
+    <meta name="author" content="Just_a_Mango, justamango@altmails.com">
+    <meta name="url" content="https://just-a-mango.github.io/mangoweb/">
+    <meta name="og:type" content="programming language"/>
+    <meta name="subject" content="Mango: A new programming language">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥭MANGO</title>
 </head>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-body, html {
-	background-color: #202023;
-	height: 100%;
-	text-align: center;
-	align-items:center;
-	animation: fadeIn 0.3s linear;
-}
-@keyframes fadeIn {
-	from {
-		opacity: 0%;
-	}
-	to {
-		opacity: 100%;
-	}
-}
-.just-a-mango {
-	color: white;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-	font-weight: bold;
-	cursor: pointer;
-}
-.just-a-mango-image {
-	width: 32px;
-	height: 32px;
-	margin-top: 5.5%;
-	border-radius: 50%;
-	position: absolute;
-	margin-left: -14%;
-	cursor: pointer;
-}
-.navbar {
-	position: fixed;
-	display: flex;
-	-webkit-box-align: center;
-	margin-left: 30%;
-}
-.works {
-	color: white;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-	margin-left: 5vw;
-	font-weight: 500;
-	cursor: pointer;
-}
-.works:hover {
-	text-decoration: underline;
-}
-.github {
-	color: white;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-	margin-left: 1vw;
-	font-weight: 500;
-	cursor: pointer;
-}
-.github:hover {
-	text-decoration: underline;
-}
-.content {
-	height: 100vh;
-}
-.works-section {
-	color: white;
-}
-.project {
-	width: 231px;
-	height: 128.33px;
-	background-color: #1b202a;
-	border: 0;
-	border-radius: 10px;
-	display: inline-block !important;
-	transition: 0.2s;
-	cursor: pointer;
-}
-.project:hover {
-	-webkit-box-shadow: 0px 0px 10px 3px rgba(46, 46, 46, 0.05); 
-	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.05);
-}
-.margin-on-right {
-	margin-right: 20px;
-}
-.margin-on-left {
-	margin-left: 20px;
-}
-.margin-on-top {
-	margin-top: 40px;
-}
-.my-works {
-	color: white;
-	font-size: 25px;
-	font-family: 'Lato', sans-serif;
-}
-.title {
-	color: white;
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-}
-@media (max-width: 540px) {
-	.margin-on-right {
-		margin-right: 0px;
-	}
-	.margin-on-left {
-		margin-left: 0px;
-	}
-	.margin-on-top {
-		margin-top: 0px;
-	}
-	.project {
-		margin-top: 40px;
-	}
-	.my-works {
-		font-size: 27px;
-	}
-}
-.description {
-	color: #FFFFFF;
-	font-family: sans-serif;
-}
-.big-image {
-	border-radius: 50%;
-}
-.maybe-dark {
-	color: white;
-}
-.da-mail {
-	color: white;
-}
-@media (prefers-color-scheme: white) {
-	body,html {
-		background-color: white;
-	}
-	.just-a-mango {
-		color: black;
-	}
-	.github {
-		color: black;
-	}
-	.works {
-		color: black;
-	}
-	.description {
-		color: black;
-	}
-	.title {
-		color: black;
-	}
-	.my-works {
-		color: black;
-	}
-	.maybe-dark {
-		color: black;
-	}
-	.da-mail {
-		color: rgb(0, 30, 95);
-	}
-}
+    @font-face {
+        font-family: FiraMedium;
+        src: url('FiraMono-Medium.ttf');
+    }
+    @font-face {
+        font-family: FiraBold;
+        src: url('FiraMono-Bold.ttf');
+    }
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .background {
+        opacity: 1;
+        background: url(https://i.imgur.com/OPlmCEb.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 0.25s;
+        -ms-overflow-style: none;
+        overflow-y: scroll;
+        scrollbar-color: #fff;
+    }
+    .get-started {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        align-content: center;
+        background-color: #4CC3FF;
+        font-family: FiraBold;
+        border-radius: 8px;
+        border: 0px;
+        height: 48px;
+        width: 160px;
+        transition: 0.25s;
+    }
+    .get-started:hover {
+        background-color: #009bdd;
+    }
+    .docs {
+        background-color: transparent;
+        border: 0;
+        font-family: FiraMedium;
+        font-size: larger;
+        position: fixed;
+        top: 2.1%;
+        color: white;
+        transition: 0.2s;
+    }
+    .docs:hover {
+        color: #38BDF8;
+    }
+    .source {
+        background-color: transparent;
+        border: 0;
+        font-family: FiraMedium;
+        font-size: larger;
+        position: fixed;
+        top: 2.1%;
+        color: white;
+        transition: 0.2s;
+    }
+    .source:hover {
+        color: #7a7a7a;
+    }
+    .donate {
+        background-color: transparent;
+        border: 0;
+        font-family: FiraMedium;
+        font-size: larger;
+        position: fixed;
+        top: 2.1%;
+        color: white;
+        transition: 0.2s;
+    }
+    .donate:hover {
+        color: #bd00b3;
+    }
+    .roadmap {
+        background-color: transparent;
+        border: 0;
+        font-family: FiraMedium;
+        font-size: larger;
+        position: fixed;
+        top: 2.1%;
+        color: white;
+        transition: 0.2s;
+    }
+    .roadmap:hover {
+        color: #00a800;
+    }
+    .code {
+        width: 542;
+        height: 536;
+        background-color: rgba(177, 177, 177, 1);
+    }
+    .glass-rectangle {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+        ;
+        cursor: none;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0);
+        align-items: center;
+        transition: 0.5s;
+    }
+    .glass-rectangle:hover {
+        color: white;
+        box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075),
+        0 32px 32px hsl(0deg 0% 0% / 0.075)
+        ;
+    }
+    .glass-selection {
+        animation: move-around;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+        ;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0);
+        align-items: center;
+        transition-duration: 2s;
+        transition: 0.19s;
+        transition: transform 0.5s;
+        -webkit-transition: transform 0.5s;
+    }
+    .glass-selection:hover {
+        border: 1px solid rgba(255, 255, 255, 1);
+    }
+    .glass-selection:active:after {
+        border: 2px solid #4CC3FF;
+    }
 </style>
-<body>
-<div class="navbar">
-	<img id="icon" src="./ico.jpg" class="just-a-mango-image" onmouseover="document.getElementById('mango').style.textDecoration = 'underline'" onmouseout="document.getElementById('mango').style.textDecoration = 'none'" onclick="switch_to_main();">
-	<h4 id="mango" class="just-a-mango" onmouseover="document.getElementById('mango').style.textDecoration = 'underline'" onmouseout="document.getElementById('mango').style.textDecoration = 'none'" onclick="switch_to_main();">Just_a_Mango</h4>
-	<h4 class="works" id="works" onclick="switch_to_works()">Works</h4>
-	<h4 class="github" onclick="window.open('https://github.com/just-a-mango');">Github</h4>
-</div>
-<div id="my-projects" class="maybe-dark">
-	<br><br><br><br><br><br><br><br>
-	<div style="font-family: 'Poppins', sans-serif;" class="maybe-dark">
-	<p><h1>Hi 👋, I&#39;m Just_a_Mango</h1></p>
-	<h3>A developer and space-passionate</h3>
-	<ul>
-	<p>💖 I love: programming, space, physics, math, and technology in general</p>
-	<p>🔭 I’m currently working on:  <a href="https://just-a-mango.github.io/mangoweb/" style="color: #4eb1e2; text-decoration: none;"><strong>Mango</strong>, my own programming language</a>  </p>
-	<p>🌱 I’m currently learning <strong>C#, C++, and Java</strong></p>
-	<p>👨‍💻 All of my projects are available <a href="https://github.com/Just-A-Mango?tab=repositories" style="color: #4eb1e2; text-decoration: none;"><strong>here</strong></a></p>
-	<p>📫 How to reach me: <a href="mailto: justamango@altmails.com" style="text-decoration: none;" class="da-mail"><strong>justamango@altmails.com</strong></a></p>
-	</ul>
-	<br><br>
-	<p><h3 >Languages and Tools:</h3></p>
-	<p> <a style="color: transparent" href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="./arduino.png" alt="arduino" width="40" height="40"/> </a> <a style="color: transparent" href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> <a style="color: transparent" href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a style="color: transparent" href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a style="color: transparent" href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a style="color: transparent" href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a style="color: transparent" href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a style="color: transparent" href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a style="color: transparent" href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a style="color: transparent" href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a style="color: transparent" href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a style="color: transparent" href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a style="color: transparent" href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> </p>
-	<p><h3 >Support:</h3></p>
-	<p><p><a href="https://www.buymeacoffee.com/justamango"> <img  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="justamango-donate" /></a></p><br><br></p>
-	</div>
-</div>
+<body class="background" style="overflow-y: scroll; overflow-x: hidden; resize: none;">
+    <div>
+        <div style="vertical-align: top; font-family: FiraMedium; color: white; margin: 15px; height: 100vh">
+            <p style="font-size: larger; position: fixed; top: 0%;">🥭Mango</p>
+            <button class="source" style="left: 95%;" onclick="window.open('https://github.com/just-a-mango/Mango','_blank')">Source</button>
+            <button class="donate" style="left: 85.75%;" onclick="window.open('https://ko-fi.com/justamango','_blank')">Donate</button>
+            <button class="docs" style="left: 91%;" onclick="window.open('https://github.com/just-a-mango/Mangoweb/wiki','_blank')">Docs</button>
+            <button class="roadmap" style="left: 80%;" onclick="window.open('https://trello.com/b/QkPYOFwk/Mango-roadmap','_blank')">Roadmap</button>
+        </div>
+        <div>
+            <h1 style="position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); font-size:66px; color: white; font-family: 'Poppins', sans-serif;">Mango</h1>
+            <h4 style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); font-size:medium; color: white; font-family: 'Poppins', sans-serif;">✨The next generation of programming languages✨</h4>
+            <button class="get-started" onclick="window.open('https://github.com/just-a-mango/Mangoweb/wiki/Download-&-Installation','_blank')">🚀 Get Started 🚀</button>
+        </div>
+        <div id="glassyntax" style="height: 100vh; resize: none;">
+            <h1 style="position: absolute; top: 110%; left: 49%; transform: translate(-50%, -50%); font-size:34px; color: #16161d; font-family: 'Poppins', sans-serif;">Why use Mango?</h1>
+            <div style="text-align: left; position: absolute; left: 18.2%;; top: 117.5%;">
+                <h1 style="font-size:24px; color: white; font-family: 'Poppins', sans-serif; margin-left: 0px;">😌Ease of mind😌</h1>
+                <div class="glass-rectangle" style="width: 300px; height: 200px; font-family: FiraMedium; padding: 15px; letter-spacing: 1px; line-height: 1.6;">Mango was built from the ground up to be readable, and easy-to-use, by simplifying the syntax and fixing past mistakes from previous programming languages.</div>
+            </div>
+            <div style="text-align: center; position: absolute; left: 40.1%;; top: 117.5%;">
+                <h1 style="font-size:24px; color: white; font-family: 'Poppins', sans-serif; margin-left: 0px;">⚡Performance⚡</h1>
+                <div class="glass-rectangle" style="width: 300px; height: 200px; font-family: FiraMedium; padding: 15px; letter-spacing: 1px; line-height: 1.2;">Mango is blazingly fast. In fact, it is so fast that it almost competes with Python in terms of performance.(it obviously can't be faster cuz it's written in Python, like duh).<br><div style="color:rgb(255, 255, 255)">->Numbers are written somewhere on this page I think</div></div>
+            </div>
+            <div style="text-align: right; position: absolute; left: 62%; top: 117.5%;">
+                <h1 style="font-size:24px; color: white; font-family: 'Poppins', sans-serif; margin-left: 0px;">🧑‍💻"Hackable"🧑‍💻</h1>
+                <div class="glass-rectangle" style="width: 300px; height: 200px; font-family: FiraMedium; padding: 15px; letter-spacing: 1px; line-height: 1.4;">(many brand use "hackable" as the term for "customizable", so <br>why not me). You can for example, modify the syntax, or replace words detected by the internal parser with other words(examples down below I think).</div>
+            </div>
+        </div>
+        <div style="height: 100vh; resize: none; align-items: center; text-align: center;">
+            <h1 style="position: absolute; top: 210%; left: 49%; transform: translate(-50%, -50%); font-size:34px; color: #16161d; font-family: 'Poppins', sans-serif;">Demo Video</h1>
+            <iframe id="demo_iframe" width="875" height="492.18" style="position: absolute; margin-top: 400px; left: 49%; transform: translate(-50%, -50%); border: 0; border-radius: 14px;" src="https://www.youtube-nocookie.com/embed/xcyA5V6Uhk8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+    </div>
 </body>
-<script>
-	function fadeOutEffect() {
-		var fadeTarget = document.getElementById("my-projects");
-		var fadeEffect = setInterval(function () {
-			if (!fadeTarget.style.opacity) {
-				fadeTarget.style.opacity = 1;
-			}
-			if (fadeTarget.style.opacity > 0) {
-				fadeTarget.style.opacity -= 0.1;
-			} else {
-				clearInterval(fadeEffect);
-			}
-		}, 8);
-	}
-	function fadeIn() {
-		var fade = document.getElementById("my-projects");
-		var opacity = 0;
-		var intervalID = setInterval(function() {
-
-			if (opacity < 1) {
-				opacity = opacity + 0.1
-				fade.style.opacity = opacity;
-			} else {
-				clearInterval(intervalID);
-			}
-		}, 8);
-	}
-	function switch_to_works() {
-		if (!document.getElementById("my-projects").innerHTML.includes("next-gen")) {
-			fadeOutEffect();
-			setTimeout(function () {
-				document.getElementById("my-projects").innerHTML = `
-				<br><br><br><br><br><br><br><br>
-				<h1 class="my-works">My works</h1>
-				<div class="project margin-on-right" style="background-color: transparent" onclick="window.open('https://just-a-mango.github.io/mangoweb/')">
-					<div class="project">
-						<img src="./mango_bg.png" width="100%" height="100%" alt="Mango programming language" style="border-radius: 10px; border: 0px; padding: 0px; margin: 0px;">
-					</div>
-					<p class="title">🥭Mango🥭<p>
-					<p class="description">A WIP next-gen programming language</p>
-				</div>
-				<div class="project margin-on-left" style="background-color: transparent" onclick="window.open('https://github.com/just-a-mango/fabricstartergen')">
-					<div class="project">
-						<img src="./fabricstartergen_bg.png" width="100%" height="100%" alt="Mango programming language" style="border-radius: 10px; border: 0px; padding: 0px; margin: 0px;">
-					</div>
-					<p class="title">FabricStarterGen<p>
-					<p class="description">A program that generates a starter fabric mod for modders</p>
-				</div><br>
-				<div class="project margin-on-right margin-on-top" style="background-color: transparent">
-					<div class="project">
-						<img src="./enlightened_bg.png" width="100%" height="100%" alt="Mango programming language" style="border-radius: 10px; border: 0px; padding: 0px; margin: 0px;">
-					</div>
-					<p class="title">Enlightened<p>
-					<p class="description">An open-world action-adventure BOTW-like game</p>
-				</div>
-				<div class="project margin-on-left margin-on-top" style="background-color: transparent">
-					<div class="project">
-						<img src="./ball_madness_bg.png" width="100%" height="100%" alt="Mango programming language" style="border-radius: 10px; border: 0px; padding: 0px; margin: 0px;">
-					</div>
-					<p class="title">Ball Madness<p>
-					<p class="description">A retro-style platformer game where you're a ball</p>
-				</div>
-				`;
-				fadeIn();
-
-			}, 750)
-		}
-	}
-	function switch_to_main() {
-			if (!document.getElementById("my-projects").innerHTML.includes("space-passionate")) {
-				fadeOutEffect();
-				setTimeout(function () {
-					document.getElementById("my-projects").innerHTML = `
-					<br><br><br><br><br><br><br><br>
-					<div style="color: white; font-family: 'Poppins', sans-serif;">
-					<p><h1>Hi 👋, I&#39;m Just_a_Mango</h1></p>
-					<h3>A developer and space-passionate</h3>
-					<ul>
-					<p>💖 I love: programming, space, physics, math, and technology in general</p>
-					<p>🔭 I’m currently working on:  <a href="https://just-a-mango.github.io/mangoweb/" style="color: #4eb1e2; text-decoration: none;"><strong>Mango</strong>, my own programming language</a>  </p>
-					<p>🌱 I’m currently learning <strong>C#, C++, and Java</strong></p>
-					<p>👨‍💻 All of my projects are available <a href="https://github.com/Just-A-Mango?tab=repositories" style="color: #4eb1e2; text-decoration: none;"><strong>here</strong></a></p>
-					<p>📫 How to reach me: <strong>justamango@altmails.com</strong></p>
-					</ul>
-					<br><br>
-					<p><h3 >Languages and Tools:</h3></p>
-					<p > <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="./arduino.png" alt="arduino" width="40" height="40"/> </a> <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> </p>
-					<p><h3 >Support:</h3></p>
-					<p><p><a href="https://www.buymeacoffee.com/justamango"> <img  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="justamango-donate" /></a></p><br><br></p>
-					</div>
-					`;
-					fadeIn();
-
-				}, 750)
-		}
-	}
-</script>
 </html>
