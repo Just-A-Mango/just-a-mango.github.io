@@ -1,0 +1,118 @@
+body, html {
+	background-color: #202023;
+	height: 100%;
+	text-align: center;
+	align-items:center;
+	animation: fadeIn 0.3s linear;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
+.just-a-mango {
+	color: white;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-weight: bold;
+	cursor: pointer;
+}
+.just-a-mango-image {
+	width: 32px;
+	height: 32px;
+	margin-top: 5.5%;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: -14%;
+	cursor: pointer;
+}
+.navbar {
+	position: fixed;
+	display: flex;
+	-webkit-box-align: center;
+	margin-left: 30%;
+}
+.works {
+	color: white;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	margin-left: 5vw;
+	font-weight: 500;
+	cursor: pointer;
+}
+.works:hover {
+	text-decoration: underline;
+}
+.github {
+	color: white;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	margin-left: 1vw;
+	font-weight: 500;
+	cursor: pointer;
+}
+.github:hover {
+	text-decoration: underline;
+}
+.content {
+	height: 100vh;
+}
+.works-section {
+	color: white;
+}
+.project {
+	width: 231px;
+	height: 128.33px;
+	background-color: #1b202a;
+	border: 0;
+	border-radius: 10px;
+	display: inline-block !important;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.project:hover {
+	-webkit-box-shadow: 0px 0px 10px 3px rgba(46, 46, 46, 0.05); 
+	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.05);
+}
+.margin-on-right {
+	margin-right: 20px;
+}
+.margin-on-left {
+	margin-left: 20px;
+}
+.margin-on-top {
+	margin-top: 40px;
+}
+.my-works {
+	color: white;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+}
+@media (max-width: 540px) {
+	.margin-on-right {
+		margin-right: 0px;
+	}
+	.margin-on-left {
+		margin-left: 0px;
+	}
+	.margin-on-top {
+		margin-top: 0px;
+	}
+	.project {
+		margin-top: 40px;
+	}
+	.my-works {
+		font-size: 27px;
+	}
+}
+.description {
+	color: #FFFFFF;
+	font-family: sans-serif;
+}
+.big-image {
+	border-radius: 50%;
+}
+.maybe-dark {
+	color: white;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
