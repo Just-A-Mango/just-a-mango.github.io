@@ -20,9 +20,9 @@ function genRepo(user) {
     else {
 
         var requestURL = 'https://api.github.com/users/' + user + '/repos';
-        var request = $.get(requestURL, function () {
-        })
-            .done(function () {
+        var request = $.get(requestURL, (function () {
+        }))
+            .done((function () {
                 request = request.responseJSON;
                 if (!Array.isArray(request) || !request.length) {
                     $("#repo-box").append("<div class='error-box'><h1 class='error-msg'> Sorry the GitHub username entered has no repos or does't exist </h1></div>");
@@ -55,6 +55,7 @@ function genRepo(user) {
                             repo_forks + "</div></div></div>");
                     }
                 }
-            });
+            }));
     }
 }
+
