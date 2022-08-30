@@ -1,0 +1,101 @@
+#repo-box {
+    margin-left: 55px;
+}
+.repo-item {
+    /* Thank you https://css.glass for this awesome CSS!*/
+    background: rgba(188, 188, 188, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    width: 72.917vw;
+    display: table-cell;
+    vertical-align: middle;
+    transition: 0.2s;
+    padding-top: 12px;
+}
+.repo-item:hover {
+    background: rgba(188, 188, 188, 0.342);
+}
+.description {
+    font-size: 14px;
+}
+.star {
+    visibility: hidden;
+}
+.fork {
+    visibility: hidden;
+}
+.language {
+    color: rgb(226, 223, 185);
+}
+body { 
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #fc6341;
+}
+#gradient-canvas {
+    width:100%;
+    height:100%;
+    display: block;
+    z-index: -100;
+    position: fixed;
+    --gradient-color-1: #ef411f; 
+    --gradient-color-2: #21319f; 
+    --gradient-color-3: #ff6a48;  
+    --gradient-color-4: #70376f;
+    top: 0;
+    left: 0;
+}
+#wrapper {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    z-index: 100;
+    position: relative;
+}
+.mango-title {
+    color: rgb(226, 223, 185);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+.mango-title-hover:hover {
+    letter-spacing:2px;
+}
+.desc-project {
+    color: #fff;
+    font-size: 48px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-left: 55px;
+}
+.space {
+    margin-top: 72vh;
+}
+@media only screen and (max-width: 600px) {
+    .mango-title{margin-left:10px}
+    .desc-project {margin-left:4px}
+    #repo-box {margin-left:4px; margin: 0 auto;}
+}
+@media only screen and (max-width: 500px) {
+    .mango-title{font-size:60px}
+    .desc-project {font-size:44.3px}
+}
+@media only screen and (max-width: 430px) {
+    .mango-title {font-size:50px}
+    .mango-title{font-size:37px}
+}

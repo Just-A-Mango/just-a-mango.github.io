@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Just_a_Mango</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Just_a_Mango">
+    <meta property="og:type" content="portfolio"/>
+    <meta property="og:image" content="./img/media_banner.png">
+    <meta property="og:url" content="https://justamango.vercel.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Just_a_Mango's website, a developer and space-passionate">
+    <meta property="og:site_name" content="Just_a_Mango">
+    <meta name="twitter:image:alt" content="Just_a_Mango's website banner">
+</head>
+<body id="body">
+<div id="wrapper">
+    <div class="content">    
+        <h1 class="mango-title" onclick="window.location.reload()"><a class="mango-title-hover" style="transition:0.45s; cursor:pointer;">Just_a_Mango</a></h1>
+        <div class="space"></div>
+        <h4 class="desc-project">Passionate about space and programming</h4>
+        <h4 class="desc-project">My projects:</h4>
+        <div id="repo-box"></div>
+        <h4 class="desc-project" style='font-size:25px;'>You can follow me on <a href="https://github.com/just-a-mango" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: rgb(238, 234, 182)" href="">Github</a> and <a href="https://twitter.com/pokoracio" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: rgb(238, 234, 182)">Twitter</a>. Here is my <a href="mailto:justamango@altmails.com" style="text-decoration: none; color: rgb(238, 234, 182)">e-mail</a>.</h4>
+    </div>
+    <canvas id="gradient-canvas" data-transition-in></canvas>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="js/script.js"></script>
+<script type="module">
+import { Gradient } from './js/Gradient.js'
+const gradient = new Gradient()
+gradient.initGradient('#gradient-canvas')
+</script>
