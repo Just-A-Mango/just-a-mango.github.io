@@ -9,14 +9,15 @@
 }
 #repo-box {
     margin-left: 55px;
+    text-decoration: none;
 }
 .repo-item {
     /* Thank you https://css.glass for this awesome CSS!*/
     background: rgba(188, 188, 188, 0.19);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.7px);
-    -webkit-backdrop-filter: blur(9.7px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -98,11 +99,12 @@ body {
 @media only screen and (max-width: 600px) {
     .mango-title{margin-left:10px}
     .desc-project {margin-left:4px}
-    #repo-box {margin-left:4px; margin: 0 auto;}
+    #repo-box {
+        margin: 0 auto;}
 }
 @media only screen and (max-width: 500px) {
     .mango-title{font-size:60px}
-    .desc-project {font-size:44.3px}
+    .desc-project {font-size:44px}
 }
 @media only screen and (max-width: 430px) {
     .mango-title {font-size:50px}
