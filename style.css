@@ -32,6 +32,10 @@
 .repo-item:hover {
     background: rgba(188, 188, 188, 0.342);
 }
+.title, .description, .language {
+    text-decoration: none;
+
+}
 .description {
     font-size: 14px;
 }
@@ -100,7 +104,8 @@ body {
     .mango-title{margin-left:10px}
     .desc-project {margin-left:4px}
     #repo-box {
-        margin: 0 auto;}
+        margin-left:calc(100vw / 20);
+    }
 }
 @media only screen and (max-width: 500px) {
     .mango-title{font-size:60px}
