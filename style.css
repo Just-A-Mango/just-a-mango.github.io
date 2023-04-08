@@ -71,7 +71,7 @@ html {
     font-family: Inter, sans-serif;
     font-weight: 600;
     font-size: 18px;
-    color: #BABABA;
+    color: rgb(126, 126, 126);
     cursor: pointer;
     transition: color .25s;
 }
@@ -277,7 +277,6 @@ html {
         top: 15px;
     }
 }
-
 
 @media (hover: hover) {
     .card-one:hover .card-one-read-more:before {
