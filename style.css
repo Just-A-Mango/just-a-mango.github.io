@@ -30,7 +30,6 @@ html {
     padding: 0;
     top: 16px;
     left: 15px;
-    image-rendering: pixelated;
 }
 .nav-title {
     position: absolute;
