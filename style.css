@@ -278,22 +278,6 @@ html {
     }
 }
 
-@media (hover: none) {
-    .card-one:hover .card-one-read-more:before {
-        color: inherit;
-    }
-    .contact-me-btn:hover {
-        background-color: inherit;
-        color: inherit;
-    }
-    .nav-contact:hover {
-        color: inherit;
-    }
-    .nav-home:hover {
-        color: inherit;
-    }
-}
-
 
 @media (hover: hover) {
     .card-one:hover .card-one-read-more:before {
