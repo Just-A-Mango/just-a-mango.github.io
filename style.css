@@ -60,6 +60,7 @@ html {
     font-size: 18px;
     cursor: pointer;
     transition: color .25s;
+    color: black;
 }
 
 .nav-contact {
@@ -74,8 +75,8 @@ html {
     color: rgb(126, 126, 126);
     cursor: pointer;
     transition: color .25s;
+    text-decoration: none;
 }
-
 
 @media screen and (max-width: 480px) {
     .nav-home {
