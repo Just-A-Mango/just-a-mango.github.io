@@ -13,7 +13,19 @@ html {
     height: fit-content;
     overflow-x: clip;
 }
-
+.full-nav {
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #F9BB5F;
+    z-index: 100;
+    transition: opacity .25s;
+    pointer-events: none;
+    user-select: none;
+}
 .nav {
     position: fixed;
     width: 100%;
@@ -75,6 +87,27 @@ html {
     color: rgb(126, 126, 126);
     cursor: pointer;
     transition: color .25s;
+    text-decoration: none;
+}
+.full-nav-home {
+    position: absolute;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    top: 40%;
+    color: black;
+}
+.full-nav-contact {
+    position: absolute;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    top: 50%;
+    color: #5e5e5e;
     text-decoration: none;
 }
 
