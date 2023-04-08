@@ -61,9 +61,7 @@ html {
     cursor: pointer;
     transition: color .25s;
 }
-.nav-home:hover {
-    color: black;
-}
+
 .nav-contact {
     position: absolute;
     top: 25px;
@@ -77,9 +75,7 @@ html {
     cursor: pointer;
     transition: color .25s;
 }
-.nav-contact:hover {
-    color: black;
-}
+
 
 @media screen and (max-width: 480px) {
     .nav-home {
@@ -153,10 +149,7 @@ html {
     cursor: pointer;
     color: black;
 }
-.contact-me-btn:hover {
-    background-color: #F6F1D5;
-    color: black;
-}
+
 
 @media screen and (max-width: 875px) {
     .moon-desc {
@@ -197,10 +190,6 @@ html {
     padding: 0;
     margin: 0;
     cursor: pointer;
-}
-.card-one:hover .card-one-read-more:before {
-    content: "> READ MORE";
-    color: white;
 }
 .card-one-desc {
     font-family: 'JetBrains Mono', monospace;
@@ -286,5 +275,25 @@ html {
     .card-one-title {
         left: 15px;
         top: 15px;
+    }
+}
+
+
+
+
+@media (hover: hover) {
+    .card-one:hover .card-one-read-more:before {
+        content: "> READ MORE";
+        color: white;
+    }
+    .contact-me-btn:hover {
+         background-color: #F6F1D5;
+         color: black;
+    }
+    .nav-contact:hover {
+         color: black;
+    }
+    .nav-home:hover {
+          color: black;
     }
 }
