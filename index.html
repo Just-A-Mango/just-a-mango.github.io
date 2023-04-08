@@ -7,31 +7,29 @@
     <meta property="og:title" content="Just_a_Mango">
     <meta property="og:type" content="portfolio">
     <meta name="og:site_name" content="Just_a_Mango">
-    <meta property="og:image" content="./img/media_banner.png">
-    <meta property="og:url" content="https://justamango.vercel.app/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:description" content="Just_a_Mango's website, a developer and space-passionate">
-    <meta property="og:site_name" content="Just_a_Mango">
-    <meta name="twitter:image:alt" content="Just_a_Mango's website banner">
 </head>
 <body id="body">
-<div id="wrapper">
-    <div class="content">    
-        <h1 class="mango-title" onclick="window.location.reload()"><a class="mango-title-hover" style="transition:0.45s; cursor:pointer;">Just_a_Mango</a></h1>
-        <div class="space"></div>
-        <h4 class="desc-project">Passionate about space and programming</h4>
-        <h4 class="desc-project">My projects:</h4>
-        <div id="repo-box"></div>
-        <h4 class="desc-project" style='font-size:25px;'>You can follow me on <a href="https://github.com/just-a-mango" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: rgb(238, 234, 182)" href="">Github</a> and <a href="https://twitter.com/pokoracio" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: rgb(238, 234, 182)">Twitter</a>. Here is my <a href="mailto:justamango@altmails.com" style="text-decoration: none; color: rgb(238, 234, 182)">e-mail</a>.</h4>
+<div class="nav">
+    <img src="img/favicon.png" alt="pfp" class="nav-pfp"/>
+    <h4 class="nav-title">JUST_A_MANGO</h4>
+    <div class="nav-hamburger">
+        <div style="width: 25px; height: 4px; background-color: black; border-radius: 3px"></div>
+        <div style="width: 25px; height: 4px; background-color: black; border-radius: 3px; margin-top: 8px;"></div>
     </div>
-    <canvas id="gradient-canvas" data-transition-in></canvas>
+    <h2 class="nav-home">Home</h2>
+    <h2 class="nav-contact">Contact</h2>
 </div>
+<div class="moon-img">
+    <p class="moon-desc">Hi, I'm Just_a_Mango, a developer who's passionate about space.</p>
+    <p class="moon-desc-sub">I enjoy imagining rockets, creating programs, and making websites with designs I enjoy.</p>
+    <button class="contact-me-btn">Contact me</button>
+</div>
+<div class="card-one">
+    <video autoplay loop muted>
+        <source src="vdo/trm.mp4" type="video/mp4">
+    </video>
+    <p class="card-one-title">TRM-ENGINE</p>
+    <p class="card-one-read-more"></p>
+</div>
+<div class="card-two">TBA</div>
 </body>
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="justamango" data-description="Support me on Buy me a coffee!" data-message="" data-color="#D5C34B" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script src="js/script.js"></script>
-<script type="module">
-import { Gradient } from './js/Gradient.js'
-const gradient = new Gradient()
-gradient.initGradient('#gradient-canvas')
-</script>
