@@ -4,14 +4,14 @@ body {
     width: 100%;
     height: 913px;
     background-color: #F6F1D5;
-    overflow-x: hidden;
+    overflow-x: clip;
     text-rendering: optimizeLegibility;
 }
 
 html {
     width: 100%;
     height: fit-content;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .nav {
@@ -40,6 +40,8 @@ html {
     padding: 0;
     top: 22px;
     left: 60px;
+    color: black;
+    mix-blend-mode: difference;
 }
 .nav-hamburger {
     display: none;
