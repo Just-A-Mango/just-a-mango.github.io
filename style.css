@@ -339,7 +339,7 @@ html {
     left: 50%;
     transform: translateX(-50%);
     top: 1335px;
-    font-size: 2vw;
+    font-size: 1.75vw;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -383,7 +383,36 @@ html {
     .footer {
         top: 2150px;
     }
+}
 
+@media screen and (max-width: 770px) {
+    .footer {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .footer {
+        font-size: 4.5vw;
+    }
 }
 
 @media (hover: hover) {
