@@ -338,11 +338,13 @@ html {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 1350px;
-    font-size: 20px;
+    top: 1335px;
+    font-size: 2vw;
+    text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    width: max-content;
+    width: calc(100vw - 30px);
+    white-space: break-spaces;
     color: coral;
     transition: 0.2s;
     cursor: pointer;
