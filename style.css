@@ -349,9 +349,7 @@ html {
     transition: 0.2s;
     cursor: pointer;
 }
-.footer:hover {
-    color: black;
-}
+
 
 
 
@@ -442,6 +440,9 @@ html {
         color: black;
     }
     .nav-home:hover {
+        color: black;
+    }
+    .footer:hover {
         color: black;
     }
 }
