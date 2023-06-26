@@ -436,6 +436,7 @@ html {
     .contact-me-btn:hover {
         background-color: #F6F1D5;
         color: black;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
     }
     .nav-contact:hover {
         color: black;
