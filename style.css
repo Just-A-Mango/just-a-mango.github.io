@@ -33,7 +33,7 @@ html {
     left: 0;
     top: 0;
     height: fit-content;
-    z-index: 50;
+    z-index: 500;
 }
 .nav-pfp {
     height: 40px;
@@ -54,7 +54,6 @@ html {
     top: 22px;
     left: 60px;
     color: black;
-    mix-blend-mode: difference;
 }
 .nav-hamburger {
     display: none;
@@ -73,9 +72,8 @@ html {
     font-size: 18px;
     cursor: pointer;
     transition: color .25s;
-    color: black;
+    color: rgb(126, 126, 126);
 }
-
 .nav-contact {
     position: absolute;
     top: 25px;
@@ -98,7 +96,7 @@ html {
     transform: translate(-50%);
     font-size: 40px;
     top: 40%;
-    color: black;
+    color: #5e5e5e;
 }
 .full-nav-contact {
     position: absolute;
@@ -444,12 +442,9 @@ html {
     }
     .nav-home:hover {
         color: black;
+
     }
     .footer:hover {
         color: black;
     }
 }
-
-
-
-
