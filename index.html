@@ -26,7 +26,7 @@
 <div class="nav">
     <img src="img/favicon.png" alt="pfp" class="nav-pfp"/>
     <h4 class="nav-title">JUST_A_MANGO</h4>
-    <div class="nav-hamburger" onclick="document.getElementById('full-nav').style.pointerEvents = 'auto';document.getElementById('full-nav').style.userSelect = 'auto';document.getElementById('full-nav').style.opacity = '1';">
+    <div class="nav-hamburger" id="base-hamburger" onclick="document.getElementById('full-nav').style.pointerEvents = 'auto';document.getElementById('full-nav').style.userSelect = 'auto';document.getElementById('full-nav').style.opacity = '1';document.getElementById('base-hamburger').style.display = 'none';">
         <div style="width: 25px; height: 4px; background-color: black; border-radius: 3px"></div>
         <div style="width: 25px; height: 4px; background-color: black; border-radius: 3px; margin-top: 8px"></div>
     </div>
@@ -34,7 +34,7 @@
     <a class="nav-contact" href="mailto:justamango@altmails.com">Contact</a>
 </div>
 <div class="full-nav" id="full-nav">
-    <div class="nav-hamburger" onclick="document.getElementById('full-nav').style.pointerEvents = 'none';document.getElementById('full-nav').style.userSelect = 'none';document.getElementById('full-nav').style.opacity = '0';">
+    <div class="nav-hamburger" style="z-index: 100000" onclick="document.getElementById('base-hamburger').style.display = 'block';document.getElementById('full-nav').style.pointerEvents = 'none';document.getElementById('full-nav').style.userSelect = 'none';document.getElementById('full-nav').style.opacity = '0';">
         <div style="width: 25px; height: 4px; background-color: black; border-radius: 3px"></div>
         <div style="width: 25px; height: 4px; background-color: black; border-radius: 3px; margin-top: 8px"></div>
     </div>
