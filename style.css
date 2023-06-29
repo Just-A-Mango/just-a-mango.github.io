@@ -294,7 +294,7 @@ html {
     transition: 0.25s;
 
 }
-.card-tba {
+.card-veber {
     width: calc((100vw - 40px) / 2);
     position: absolute;
     height: 400px;
@@ -303,12 +303,11 @@ html {
     top: 930px;
     padding: 0;
     margin: 0;
-    background-color: black;
-    color: white;
-    font-family: "JetBrains Mono", monospace;
-    text-align: center;
-    line-height: 400px;
-    user-select: none;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("./img/veber.webp");
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: center center;
     transition: 0.25s;
 }
 .card-worm {
@@ -337,13 +336,16 @@ html {
     left: 50%;
     transform: translateX(-50%);
     top: 1335px;
-    font-size: 1.75vw;
+    font-size: 18px;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     width: calc(100vw - 30px);
     white-space: break-spaces;
     color: coral;
+
+}
+.footer-hover {
     transition: 0.2s;
     cursor: pointer;
 }
@@ -362,7 +364,7 @@ html {
         right: 15px;
         top: 930px;
     }
-    .card-tba {
+    .card-veber {
         width: calc(100vw - 30px);
         right: 15px;
         top: 1750px;
@@ -424,8 +426,15 @@ html {
         filter: drop-shadow(0px 5px 20px rgba(3, 45, 0, 0.8));
         scale: 1.01;
     }
+    .card-veber:hover {
+        filter: drop-shadow(0px 5px 20px rgba(1, 20, 40, 0.8));
+        scale: 1.01;
+    }
     .card-trm:hover .card-read-more:before {
         color: white;
+    }
+    .card-veber:hover, .card-read-more:before {
+        color: white
     }
     .card-wintrace:hover .card-read-more:before {
         color: white;
@@ -445,7 +454,7 @@ html {
         color: black;
 
     }
-    .footer:hover {
+    .footer-hover:hover {
         color: black;
     }
 }
