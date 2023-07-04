@@ -46,12 +46,12 @@ html {
 }
 .nav-title {
     position: absolute;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 20px;
     margin: 0;
     padding: 0;
-    top: 22px;
+    top: 24px;
     left: 60px;
     color: black;
 }
@@ -260,10 +260,7 @@ html {
     left: 20px;
     top: 20px;
 }
-.card-read-more:before {
-    content: "VIEW MORE";
-    transition: color .25s;
-}
+
 .card-read-more {
     font-family: 'JetBrains Mono', monospace;
     font-style: normal;
@@ -276,7 +273,11 @@ html {
     position: absolute;
     left: 20px;
     bottom: 20px;
+    transition: color .25s;
 }
+.card-read-more:before {
+     content: "VIEW MORE";
+ }
 .card-wintrace {
     width: calc((100vw - 40px) / 2);
     position: absolute;
@@ -455,17 +456,20 @@ html {
         filter: drop-shadow(0px 5px 20px rgba(1, 20, 40, 0.8));
         scale: 1.01;
     }
-    .card-trm:hover .card-read-more:before {
-        color: white;
+    .card-stellar:hover > .card-read-more {
+        color: white !important;
     }
-    .card-veber:hover, .card-read-more:before {
-        color: white
+    .card-trm:hover > .card-read-more {
+        color: white !important;
     }
-    .card-wintrace:hover .card-read-more:before {
-        color: white;
+    .card-veber:hover >.card-read-more {
+        color: white !important;
     }
-    .card-worm:hover .card-read-more:before {
-        color: white;
+    .card-wintrace:hover > .card-read-more {
+        color: white !important;
+    }
+    .card-worm:hover > .card-read-more {
+        color: white !important;
     }
     .contact-me-btn:hover {
         background-color: #F6F1D5;
