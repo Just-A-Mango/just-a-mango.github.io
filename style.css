@@ -270,7 +270,7 @@ html {
     font-weight: 600;
     font-size: 16px;
     z-index: 50;
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.25) !important;
     padding: 0;
     margin: 0;
     position: absolute;
@@ -325,6 +325,22 @@ html {
     background-position: center center;
     transition: 0.25s;
 }
+.card-stellar {
+    width: calc(100% - 30px) !important;
+    position: absolute;
+    height: 400px;
+    left: 15px;
+    border-radius: 25px;
+    top: 1340px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/stellar.png");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    transition: 0.25s;
+}
 
 
 
@@ -335,7 +351,7 @@ html {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 1335px;
+    top: 1800px;
     font-size: 18px;
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -369,6 +385,11 @@ html {
         right: 15px;
         top: 1750px;
     }
+    .card-stellar {
+        top: 2160px !important;
+        width: calc(100vw - 30px);
+        right: 15px;
+    }
     .card-worm {
         width: calc(100vw - 30px);
         left: 15px;
@@ -379,7 +400,7 @@ html {
         top: 15px;
     }
     .footer {
-        top: 2150px;
+        top: 2600px;
     }
 }
 
@@ -424,6 +445,10 @@ html {
     }
     .card-worm:hover {
         filter: drop-shadow(0px 5px 20px rgba(3, 45, 0, 0.8));
+        scale: 1.01;
+    }
+    .card-stellar:hover {
+        filter: drop-shadow(0px 5px 20px rgba(40, 40, 40, 0.8));
         scale: 1.01;
     }
     .card-veber:hover {
