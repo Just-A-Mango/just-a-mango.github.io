@@ -1,0 +1,526 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 14 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    background-color: #ffffff;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 55px;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar h1 {
+    display: inline-block;
+    color: black;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    position: relative;
+    top: -12px;
+    left: 5px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.navbar h1 span {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    letter-spacing: 0.001em;
+    color: #8a8a8a;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.navbar h1 span:hover {
+    color: black;
+    font-size: 15px;
+}
+
+.navbar h2 {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 11px;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.navbar h2 a {
+    color: unset;
+    text-decoration: none;
+}
+
+.navbar h2:hover {
+    color: black;
+}
+
+.navbar h2:nth-of-type(1) {
+    right: 215px;
+}
+
+.navbar h2:nth-of-type(2) {
+    right: 130px;
+}
+
+.navbar h2:last-of-type {
+    right: 40px;
+}
+
+@media screen and (max-width: 640px) {
+    .navbar h2 {
+        display: none;
+    }
+}
+
+
+.main-section {
+    width: calc(100vw - 30px);
+    border-radius: 25px;
+    height: 436px;
+    background-image: url("img/moon.webp");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    left: 6px;
+    top: 65px;
+}
+
+.main-section p:first-of-type {
+    color: white;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    bottom: 47px;
+    font-size: 20px;
+    left: 30px;
+    margin: 0;
+    position: absolute;
+    width: calc(100vw - 60px);
+}
+
+.main-section p:nth-of-type(2) {
+    color: darkgray;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    bottom: 30px;
+    font-size: 15px;
+    left: 30px;
+    margin: 0;
+    position: absolute;
+    width: calc(100vw - 60px);
+}
+
+.main-section button {
+    border-radius: 23px;
+    outline: 0;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 35px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    color: black;
+    border: solid 1px transparent;
+}
+
+.main-section button:hover {
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+
+}
+.main-section button:active {
+    scale: 0.95;
+}
+
+@media screen and (max-width: 875px) {
+    .main-section p:first-of-type {
+        bottom: 95px;
+        left: 15px;
+    }
+
+    .main-section p:nth-of-type(2) {
+        bottom: 73px;
+        left: 15px;
+    }
+
+    .main-section button {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .main-section p:first-of-type {
+        bottom: 115px;
+        left: 15px;
+    }
+
+    .main-section p:nth-of-type(2) {
+        bottom: 75px;
+        left: 15px;
+    }
+}
+
+
+.section-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+
+.half-section {
+    width: calc((100vw - 40px) / 2);
+    border-radius: 25px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    height: 400px;
+    background-color: #5e5e5e;
+    position: relative;
+    transform: translateZ(0)
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .half-section:hover {
+        -webkit-filter: drop-shadow(0px 5px 20px #1B1A1B);
+        filter: drop-shadow(0px 5px 20px #1B1A1B);
+        scale: 1.01;
+    }
+
+    .half-section:hover > .card-read-more {
+        color: white !important;
+    }
+
+    .full-section:hover {
+        -webkit-filter: drop-shadow(0px 5px 20px #1B1A1B);
+        filter: drop-shadow(0px 5px 20px #1B1A1B);
+        scale: 1.01;
+    }
+
+    .full-section:hover > .card-read-more {
+        color: white !important;
+    }
+}
+
+.half-section:first-of-type {
+    left: 5px;
+}
+
+.half-section:nth-of-type(2) {
+    left: 15px;
+}
+
+.full-section {
+    width: calc(100vw - 30px);
+    border-radius: 25px;
+    height: 400px;
+    background-color: #5e5e5e;
+    margin-top: 10px;
+    margin-left: 6px;
+    cursor: pointer;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    z-index: 1 !important;
+    position: relative;
+    display: block;
+}
+
+.card-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    z-index: 1;
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.card-desc {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    z-index: 1;
+    color: rgb(141, 141, 141);
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    top: 65px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    padding-right: 10px;
+}
+
+.card-read-more {
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.25) !important;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    -webkit-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+
+.card-read-more:before {
+    content: "VIEW MORE";
+}
+
+
+.card-trm video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.card-wintrace {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.50)), to(rgba(0, 0, 0, 0.50))), url("./img/wintrace.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("./img/wintrace.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("./img/wintrace.webp");
+    background-size: 1%;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.card-wintrace:hover {
+    -webkit-filter: drop-shadow(0px 5px 20px #010178) !important;
+    filter: drop-shadow(0px 5px 20px #010178) !important;
+}
+
+.card-worm {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/worm.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/worm.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/worm.webp");
+    background-size: auto;
+    background-position: center center;
+}
+
+.card-worm:hover {
+    -webkit-filter: drop-shadow(0px 5px 20px #1D3E2E) !important;
+    filter: drop-shadow(0px 5px 20px #1D3E2E) !important;
+}
+
+.card-veber {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.50)), to(rgba(0, 0, 0, 0.50))), url("./img/veber.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("./img/veber.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("./img/veber.webp");
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: center center;
+}
+.card-veber:hover {
+    -webkit-filter: drop-shadow(0px 5px 20px #09172f) !important;
+    filter: drop-shadow(0px 5px 20px #09172f) !important;
+}
+
+.card-stellar {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/stellar.png");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/stellar.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/stellar.png");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.card-flux {
+    background-color: #000000;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/flux.png");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/flux.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/flux.png");
+    background-size: 25%;
+    background-position: center center;
+    background-repeat: repeat;
+}
+.card-flux:hover {
+    -webkit-filter: drop-shadow(0px 5px 20px #000000) !important;
+    filter: drop-shadow(0px 5px 20px #000000) !important;
+}
+
+.card-mangoengine {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/mangoengine.png");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/mangoengine.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/mangoengine.png");
+    background-size: 10%;
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+.card-cubicterraingen {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/cubicterraingen.png");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/cubicterraingen.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/cubicterraingen.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.card-cubicterraingen:hover {
+    -webkit-filter: drop-shadow(0px 5px 20px #535151) !important;
+    filter: drop-shadow(0px 5px 20px #535151) !important;
+}
+
+.card-coloredpython {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/coloredpython.jpg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/coloredpython.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/coloredpython.jpg");
+    background-size: 25%;
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+.card-mango {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/mango.png");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/mango.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/mango.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.card-mango:hover {
+    -webkit-filter: drop-shadow(0px 5px 20px #302117) !important;
+    filter: drop-shadow(0px 5px 20px #302117) !important;
+}
+
+.card-ballmadness {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/ballmadness.png");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/ballmadness.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/ballmadness.png");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.card-ballmadness:hover {
+    -webkit-filter: drop-shadow(0px 5px 20px #4F2516) !important;
+    filter: drop-shadow(0px 5px 20px #4F2516) !important;
+}
+
+.card-passgen {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.60))), url("./img/passgen.png");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60)), url("./img/passgen.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60)), url("./img/passgen.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.card-passgen:hover {
+    -webkit-filter: drop-shadow(0px 5px 20px #33641F) !important;
+    filter: drop-shadow(0px 5px 20px #33641F) !important;
+}
+
+.card-fabricmodgenerator {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/fabricmodgenerator.jpg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/fabricmodgenerator.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/fabricmodgenerator.jpg");
+    background-size: 20%;
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+.card-unrestrict {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.80)), to(rgba(0, 0, 0, 0.60))), url("./img/unrestrict.png");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)), url("./img/unrestrict.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)), url("./img/unrestrict.png");
+    background-size: 5%;
+    background-position: center center;
+    background-repeat: repeat;
+}
+.card-unrestrict:hover {
+    -webkit-filter: drop-shadow(0px 5px 20px #625b1d) !important;
+    filter: drop-shadow(0px 5px 20px #625b1d) !important;
+}
+
+.card-dreams {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.80)), to(rgba(0, 0, 0, 0.60))), url("./img/dreams.png");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)), url("./img/dreams.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)), url("./img/dreams.png");
+    background-size: 30%;
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+.card-verticalslabs {
+    background-color: black;
+}
+
+.card-double {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.60))), url("img/double16.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60)), url("img/double16.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60)), url("img/double16.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 890px) {
+    .section-row {
+        display: block;
+        margin-top: 0;
+        left: 0;
+    }
+    .half-section {
+        width: calc((100vw - 30px));
+        margin-top: 10px;
+        left: 6px !important;
+        display: block;
+    }
+}
