@@ -63,6 +63,11 @@
     <p class="card-title">MESSAGES TO THE STARS</p>
     <p class="card-read-more"></p>
 </a>
+<a target="_blank" href="https://nuclearfusion.vercel.app/" class="full-section card-fusion">
+    <p class="card-title">NUCLEAR FUSION</p>
+    <p class="card-desc">Trying to make more people interested in nuclear fusion and its potential.</p>
+    <p class="card-read-more"></p>
+</a>
 <a href="https://github.com/just-a-mango/worm-virus" target="_blank" class="full-section card-worm">
     <p class="card-title">WORM-VIRUS</p>
     <p class="card-desc">An example WORM virus written in Python</p>
@@ -143,7 +148,7 @@
     let style = document.createElement('style');
 
     style.appendChild(document.createTextNode(css));
-    window.addEventListener("scroll", (e) => {
+    window.addEventListener("scroll", () => {
         if (document.documentElement.scrollTop >= 45) {
             document.querySelector(".navbar h1").style.color = "white"
             document.querySelectorAll(".navbar h2").forEach((element) => {
