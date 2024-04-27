@@ -21,14 +21,14 @@
 <body>
 <div class="navbar">
     <img alt="Profile picture" src="img/favicon.png"/>
-    <h1>Just_a_Mango<span> / Horace Hoff</span></h1>
-    <h2><a href="https://www.linkedin.com/in/horace-hoff" target="_blank">LinkedIn</a></h2>
-    <h2><a href="https://github.com/just-a-mango" target="_blank">GitHub</a></h2>
-    <h2 onclick="window.location.href = 'mailto:justamango@altmails.com'">Contact</h2>
+    <h1>Just_a_Mango</h1>
+    <h2><a href="https://www.linkedin.com/in/horace-hoff" target="_blank">LINKEDIN</a></h2>
+    <h2><a href="https://github.com/just-a-mango" target="_blank">GITHUB</a></h2>
+    <h2 onclick="window.location.href = 'mailto:justamango@altmails.com'">CONTACT</h2>
 </div>
 <div class="main-section">
     <p>Hi, I'm Just_a_Mango, a 16-year-old developer who's passionate about space.</p>
-    <p>I enjoy imagining rockets, creating programs, and making websites with designs I enjoy.</p>
+    <p>I enjoy thinking and imagining, making rockets, creating programs, and making websites with designs I enjoy.</p>
     <button class="contact-me-btn" onclick="window.location.href = 'mailto:justamango@altmails.com'">Contact me</button>
 </div>
 <br/><br/><br/><br/>
@@ -165,28 +165,28 @@
             } catch {}
         }
     })
-    let main = document.querySelector(".navbar h1")
-    let side = document.querySelector(".navbar h1 span")
-    let icon = document.querySelector(".navbar img")
-    document.querySelector(".navbar h1 span").onclick = () => {
-        if (main.innerHTML === "Just_a_Mango<span> / Horace Hoff</span>") {
-            main.innerHTML = "Horace Hoff<span> / Just_a_Mango</span>"
-            icon.src = "img/faviconreal.jpeg"
-        } else {
-            main.innerHTML = "Just_a_Mango<span> / Horace Hoff</span>"
-            icon.src = "img/favicon.png"
-        }
-    }
-    document.querySelector(".navbar h1").onclick = () => {
-        document.querySelector(".navbar h1 span").onclick = () => {
-            if (main.innerHTML === "Just_a_Mango<span> / Horace Hoff</span>") {
-                main.innerHTML = "Horace Hoff<span> / Just_a_Mango</span>"
-                icon.src = "img/faviconreal.jpeg"
-            } else {
-                main.innerHTML = "Just_a_Mango<span> / Horace Hoff</span>"
-                icon.src = "img/favicon.png"
-            }
-        }
-    }
+    // let main = document.querySelector(".navbar h1")
+    // let side = document.querySelector(".navbar h1 span")
+    // let icon = document.querySelector(".navbar img")
+    // document.querySelector(".navbar h1 span").onclick = () => {
+    //     if (main.innerHTML === "Just_a_Mango<span> / Horace Hoff</span>") {
+    //         main.innerHTML = "Horace Hoff<span> / Just_a_Mango</span>"
+    //         icon.src = "img/faviconreal.jpeg"
+    //     } else {
+    //         main.innerHTML = "Just_a_Mango<span> / Horace Hoff</span>"
+    //         icon.src = "img/favicon.png"
+    //     }
+    // }
+    // document.querySelector(".navbar h1").onclick = () => {
+    //     document.querySelector(".navbar h1 span").onclick = () => {
+    //         if (main.innerHTML === "Just_a_Mango<span> / Horace Hoff</span>") {
+    //             main.innerHTML = "Horace Hoff<span> / Just_a_Mango</span>"
+    //             icon.src = "img/faviconreal.jpeg"
+    //         } else {
+    //             main.innerHTML = "Just_a_Mango<span> / Horace Hoff</span>"
+    //             icon.src = "img/favicon.png"
+    //         }
+    //     }
+    // }
 </script>
 </html>
