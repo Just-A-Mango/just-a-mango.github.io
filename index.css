@@ -70,6 +70,7 @@ body {
 
 .navbar h2:hover {
     color: black;
+    text-decoration: underline;
 }
 
 .navbar h2:nth-of-type(1) {
