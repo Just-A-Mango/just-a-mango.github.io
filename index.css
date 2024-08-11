@@ -205,10 +205,11 @@ body {
     margin: 0;
     border: 0;
     cursor: pointer;
-    height: 400px;
+    /*height: 400px;*/
+    height: 300px;
     background-color: #5e5e5e;
     position: relative;
-    transform: translateZ(0)
+    transform: translateZ(0);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -244,7 +245,8 @@ body {
 .full-section {
     width: calc(100vw - 30px);
     border-radius: 25px;
-    height: 400px;
+    /*height: 400px;*/
+    height: 300px;
     background-color: #5e5e5e;
     margin-top: 10px;
     margin-left: 6px;
@@ -337,9 +339,9 @@ body {
 }
 
 .card-worm {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/worm.webp");
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/worm.webp");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/worm.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/worm.jpg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/worm.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/worm.jpg");
     background-size: auto;
     background-position: center center;
 }
@@ -363,11 +365,11 @@ body {
 }
 
 .card-stellar {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/stellar.png");
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/stellar.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/stellar.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.80)), to(rgba(0, 0, 0, 0.80))), url("./img/stellar.jpg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("./img/stellar.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("./img/stellar.jpg");
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -395,9 +397,9 @@ body {
 }
 
 .card-cubicterraingen {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/cubicterraingen.png");
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/cubicterraingen.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/cubicterraingen.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/cubicterraingen.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/cubicterraingen.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/cubicterraingen.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -417,9 +419,9 @@ body {
 }
 
 .card-mango {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/mango.png");
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/mango.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/mango.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("./img/mango.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/mango.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./img/mango.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -443,9 +445,9 @@ body {
 }
 
 .card-passgen {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.60))), url("./img/passgen.png");
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60)), url("./img/passgen.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60)), url("./img/passgen.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.60))), url("./img/passgen.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60)), url("./img/passgen.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.60)), url("./img/passgen.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -500,13 +502,49 @@ body {
 }
 
 .card-fusion {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.60))), url("img/nuclearfusion.png");
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.60)), url("img/nuclearfusion.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.60)), url("img/nuclearfusion.png");
+    background-image: url("img/nuclearfusion.webp");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.card-knowledgequantify {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.80)), to(rgba(0, 0, 0, 0.60))), url("./img/knowledgequantify.jpeg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)), url("./img/knowledgequantify.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)), url("./img/knowledgequantify.jpeg");
+    background-size: 15%;
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+.card-lpi {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.80)), to(rgba(0, 0, 0, 0.60))), url("./img/lpi.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)), url("./img/lpi.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)), url("./img/lpi.webp");
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: repeat;
+}
+
+.card-digitrecon {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.70)), to(rgba(0, 0, 0, 0.70))), url("./img/digitrecon.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("./img/digitrecon.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("./img/digitrecon.webp");
+    background-size: 200%;
+    background-position: 50% center;
+    background-repeat: repeat;
+}
+
+.card-neural {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url("img/neural.webp");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("img/neural.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("img/neural.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+
 
 @media screen and (max-width: 890px) {
     .section-row {
