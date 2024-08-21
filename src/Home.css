@@ -79,6 +79,7 @@ pre {
     object-fit: cover;
     object-position: center center;
     transition: 1s;
+    content-visibility: auto;
 }
 
 .bg:first-of-type {
