@@ -1,6 +1,6 @@
 import './Home.css'
 import {ansiShadow, useAsciiText} from 'react-ascii-text';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 
 function Home() {
@@ -48,45 +48,213 @@ function Home() {
         },
         {
             name: "DOUBLE16",
-            desc: "A code marketplace made for buying and selling code snippets.",
+            desc: "A code marketplace made for buying and selling code snippets",
             url: "https://github.com/horacehoff/double16",
             banner: "./assets/double16.png",
-            lang: "React"
+            lang: "Vite/React(JS)"
         },
         {
             name: "Veber",
-            desc: "An experimental digital, fully-encrypted, secure monetary system.",
+            desc: "An experimental digital, fully-encrypted, secure monetary system",
             url: "https://github.com/horacehoff/veber",
             lang: "Rust"
+        },
+        {
+            name: "Neural",
+            desc: "Learning platform for those who have a thirst for knowledge",
+            lang: "Vite/React(JS)"
+        },
+        {
+            name: "DigitRecon",
+            desc: "A custom neural network written from scratch in Python designed to identify digits",
+            lang: "Python"
+        },
+        {
+            name: "Messages To The Stars",
+            desc: "Here are the majority of messages humanity has sent to outer space, hopeful that they will someday reach the ears of a distant civilization",
+            lang: "HTML/CSS/JS"
+        },
+        {
+            name: "Nuclear Fusion",
+            desc: "Clean energy for all of humanity",
+            lang: "Vite/React(JS)"
+        },
+        {
+            name: "Decentra",
+            desc: 'A "decentralized-ish" network system',
+            lang: "Python"
+        },
+        {
+            name: "Nanopy",
+            desc: "A console text editor which is very much inspired from nano",
+            lang: "C++"
+        },
+        {
+            name: "Burt",
+            desc: "An incomplete minimal terminal text editor",
+            lang: "Rust"
+        },
+        {
+            name: "Focal",
+            desc: "A very limited interpreted programming language",
+            lang: "Python",
+        },
+        {
+            name: "Ada",
+            desc: "A decentralized web-app that allows anyone to share anything",
+            lang: "Svelte(JS)",
+        },
+        {
+            name: "Devshop",
+            desc: "An online (but free, at the moment) marketplace that allows anyone to buy, use, or sell code, whether it be full programs/projects (packages) or code snippets",
+            lang: "Vite/React(JS)",
+        },
+        {
+            name: "Filtered Glitches",
+            desc: "A python script that radically transforms images with extreme filters (tried doing NFTs)",
+            lang: "Python",
+        },
+        {
+            name: "Worm Virus",
+            desc: "An example Worm Virus (for educational purposes)",
+            lang: "Python"
+        },
+        {
+            name: "Wintrace",
+            desc: "Website/script to get information about any IP",
+            lang: "HTML/CSS/JS/Python"
+        },
+        {
+            name: "Mango Engine",
+            desc: "A small ASCII graphics engine",
+            lang: "C++"
+        },
+        {
+            name: "Sah",
+            desc: "An abandoned programming language that was meant to be performant",
+            lang: "Python"
+        },
+        {
+            name:"CubicTerrainGen",
+            desc:"An Unreal Engine 5 project that generates minecraft-like terrain using sine waves",
+            lang: "Blueprint"
+        },
+        {
+            name: "Colored Python",
+            desc: "A super-lightweight python module to print colored text to the terminal easily",
+            lang: "Python"
+        },
+        {
+            name: "Mango",
+            desc: "A half-complete programming language written with ease of use in mind",
+            lang: "Python"
+        },
+        {
+            name: "Pass-Gen",
+            desc: "A tiny password generator",
+            lang: "C++/Python"
+        },
+        {
+            name: "Ball Madness",
+            desc: "An open-source retro platformer developed in Unreal Engine",
+            lang: "Blueprint"
+        },
+        {
+            name: "Fabric Mod Generator",
+            desc: "A minecraft modding program that generates a starter fabric mod for you to start modding right away",
+            lang: "Python"
+        },
+        {
+            name: "Mosk",
+            desc: "A Minecraft mod project which aims at improving the game in a vanilla-like way",
+            lang: "Java"
+        },
+        {
+            name: "Volcanic Evolution (5K+ downloads)",
+            desc: "A minecraft mod that adds more armors/weapons/ores",
+            lang: "Java"
+        },
+        {
+            name: "Simpler Options (6K+ downloads)",
+            desc: "A minecraft mod that simplifies complex mod settings to make them as Vanilla-like as possible",
+            lang: "Java"
+        },
+        {
+            name: "Unrestrict",
+            desc: "A minecraft mod that removes the new controversial reporting features introduced by Mojang in 1.19.1",
+            lang: "Java"
+        },
+        {
+            name: "Dreams",
+            desc: "A minecraft mod that adds an aether-like 'Dreams' dimension",
+            lang: "Java"
+        },
+        {
+            name: "Vertical Slabs",
+            desc: "A minecraft mod that adds vertical slabs",
+            lang: "Java"
+        },
+        {
+            name: "This website",
+            desc: "(I needed another project so that the total number would be even)",
+            lang: "Vite/React(JS)"
         }
     ]
 
 
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
 
-    let isProjectHovered = false;
+
+    // let isProjectHovered = false;
     function slowScroll(elementId, duration) {
         const element = document.getElementById(elementId);
-        const start = element.scrollLeft;
-        const end = element.scrollWidth - element.clientWidth; // Max scroll position
-        const change = end - start;
+        const maxScroll = element.scrollWidth - element.clientWidth; // Max scroll position
         const startTime = performance.now();
+        let direction = 1; // 1 for forward, -1 for backward
+        let anim_duration = duration
 
         function scrollStep(currentTime) {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1); // Ensure progress is between 0 and 1
+            const elapsed = (currentTime - startTime) % (2 * anim_duration); // Looping every 2 * duration for back and forth
+            const progress = elapsed / anim_duration; // Progress from 0 to 1
 
-            element.scrollLeft = start + change * progress; // Set scroll position
 
-            if (progress < 1) {
-                requestAnimationFrame(scrollStep); // Continue animation
-                if (!isProjectHovered) {
-                    element.scrollLeft = 0
+
+            if (progress > 1) {
+
+                // Reverse direction for the second half of the loop
+                if (x === 1) {
+                    sleep(1000)
+                    element.scrollLeft = maxScroll - (maxScroll * (progress - 1));
+                } else {
+                    element.scrollLeft = maxScroll - (maxScroll * (progress - 1));
                 }
+            } else {
+                    element.scrollLeft = maxScroll * progress;
             }
+
+            requestAnimationFrame(scrollStep); // Continue animation
         }
 
         requestAnimationFrame(scrollStep);
     }
+
+    function WordCount(str) {
+        return str.split(' ')
+            .filter(function(n) { return n !== '' })
+            .length;
+    }
+
+    useEffect(() => {
+        document.querySelectorAll('.scrolling-text').forEach(element => {
+            let elem = document.getElementById(element.id)
+            // if (element.scrollWidth !== element.innerWidth) {
+            //     console.log("overflows")
+                slowScroll(element.id, WordCount(document.getElementById(element.id).innerText) / 2 * 1000); // 3 seconds scroll duration
+            // }
+        });
+    }, [])
 
   return (
       <>
@@ -122,33 +290,32 @@ function Home() {
               LinkedIn</a>
           <br/><br/>
           <h1>Hi, I'm Horace.</h1>
-          <h2>I enjoy thinking and imagining, making rockets, creating programs, and making websites with
-              designs I enjoy.</h2>
-          <h3>Below are most of my projects.</h3>
+          <h2>I love imagining and creating rockets, robots, programs, and websites. I'm passionate about space, coding, technology, math, physics, and sometimes skateboarding.</h2>
+          <h3>(Most of) My projects.</h3>
           <ul className="projects">
               {
                   repositories.map((data, index) =>
                       <>
-                          <li key={index} onMouseEnter={() => {
-                              isProjectHovered = true
-                              if (document.getElementById(index).scrollLeft === 0) {
-                                  slowScroll(index, 3000)
-                              }
-                          }}
-                              onMouseLeave={() => {
-                                  isProjectHovered = false
-                                  if (document.getElementById(index).scrollLeft === document.getElementById(index).scrollWidth - document.getElementById(index).clientWidth) {
-                                      document.getElementById(index).scrollTo({
-                                          left: 0,
-                                          behavior: "smooth"
-                                      })
-                                  }
-                          }}>
+                          <li key={index}
+                          //     onMouseEnter={() => {
+                          //     isProjectHovered = true
+                          //     if (document.getElementById(index).scrollLeft === 0) {
+                          //         slowScroll(index, 3000)
+                          //     }
+                          // }}
+                          //     onMouseLeave={() => {
+                          //         isProjectHovered = false
+                          //         if (document.getElementById(index).scrollLeft === document.getElementById(index).scrollWidth - document.getElementById(index).clientWidth) {
+                          //             document.getElementById(index).scrollTo({
+                          //                 left: 0,
+                          //                 behavior: "smooth"
+                          //             })
+                          //         }
+                          // }}
+                          >
                               <a href={data.url} target="_blank">
                                   <h4>{data.name} <span>{data.lang}</span></h4>
-                                  <h5 id={index} className="no-scrollbar" onMouseEnter={() => {
-                                      handleButtonClick()
-                                  }}>{data.desc}</h5>
+                                  <h5 id={index} className="no-scrollbar scrolling-text">{data.desc}</h5>
                               </a>
                           </li>
                       </>

@@ -118,14 +118,13 @@ pre {
     cursor: pointer;
     list-style-type: none;
     width: var(--project-width);
-    height: 50px;
+    min-height: 50px;
     border: solid 1px transparent;
     display: inline-block;
     border-radius: 6px;
     padding: 10px;
     z-index: 1;
     position: relative;
-    /*background-color: black;*/
 }
 .projects li:nth-child(1n) {
     right: 5px;
@@ -241,8 +240,12 @@ pre {
     pre {
         font-size: 9px;
     }
+    h2, h3 {
+        margin-top: 5px;
+    }
     .projects {
         width: calc(var(--project-width) * 2 + 20px);
+        top: 20px;
     }
     .projects li {
         width: calc(var(--project-width) * 2);
@@ -250,6 +253,8 @@ pre {
     }
     .projects li a h5 {
         width: calc(var(--project-width) * 2);
+        white-space: initial !important;
+        overflow: initial !important;
     }
     .projects li:nth-child(1n) {
         right: 0;
