@@ -1,26 +1,21 @@
 import './Home.css'
 import {ansiShadow, useAsciiText} from 'react-ascii-text';
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
+import Saturn from "./bg/saturn.avif"
+import Moon from "./bg/moon.avif"
+import Roadster from "./bg/roadster.avif"
 
 
 function Home() {
-    const [txt, setTxt] = useState("Horace Hoff")
-
     const asciiTextRef = useAsciiText({
         animationLoop: false,
         fadeInOnly: true,
         animationDelay: 0,
         font: ansiShadow,
-        text: txt,
+        text: "Horace Hoff",
         isAnimated: true,
         animationInterval: 0,
     });
-
-    const handleButtonClick = () => {
-        console.log("handled")
-        setTxt("New Text!"); // Update text on button press
-    };
-
     const repositories = [
         {
             name: "TRM-ENGINE",
@@ -62,141 +57,168 @@ function Home() {
         {
             name: "Neural",
             desc: "Learning platform for those who have a thirst for knowledge",
+            url: "https://github.com/horacehoff/neural",
             lang: "Vite/React(JS)"
         },
         {
             name: "DigitRecon",
             desc: "A custom neural network written from scratch in Python designed to identify digits",
+            url: "https://github.com/horacehoff/digit-recon",
             lang: "Python"
         },
         {
             name: "Messages To The Stars",
             desc: "Here are the majority of messages humanity has sent to outer space, hopeful that they will someday reach the ears of a distant civilization",
+            url: "https://github.com/horacehoff/messages-to-the-stars",
             lang: "HTML/CSS/JS"
         },
         {
             name: "Nuclear Fusion",
             desc: "Clean energy for all of humanity",
+            url: "https://github.com/horacehoff/fusion",
             lang: "Vite/React(JS)"
         },
         {
             name: "Decentra",
             desc: 'A "decentralized-ish" network system',
+            url: "https://github.com/horacehoff/decentra",
             lang: "Python"
         },
         {
             name: "Nanopy",
             desc: "A console text editor which is very much inspired from nano",
+            url: "https://github.com/horacehoff/nanopy",
             lang: "C++"
         },
         {
             name: "Burt",
             desc: "An incomplete minimal terminal text editor",
+            url: "https://github.com/horacehoff/burt",
             lang: "Rust"
         },
         {
             name: "Focal",
             desc: "A very limited interpreted programming language",
+            url: "https://github.com/horacehoff/project-focal",
             lang: "Python",
         },
         {
             name: "Ada",
             desc: "A decentralized web-app that allows anyone to share anything",
+            url: "https://github.com/horacehoff/ada",
             lang: "Svelte(JS)",
         },
         {
             name: "Devshop",
             desc: "An online (but free, at the moment) marketplace that allows anyone to buy, use, or sell code, whether it be full programs/projects (packages) or code snippets",
+            url: "https://github.com/horacehoff/devshop",
             lang: "Vite/React(JS)",
         },
         {
             name: "Filtered Glitches",
             desc: "A python script that radically transforms images with extreme filters (tried doing NFTs)",
+            url: "https://github.com/horacehoff/filtered-glitches",
             lang: "Python",
         },
         {
             name: "Worm Virus",
             desc: "An example Worm Virus (for educational purposes)",
+            url: "https://github.com/horacehoff/worm-virus",
             lang: "Python"
         },
         {
             name: "Wintrace",
             desc: "Website/script to get information about any IP",
+            url: "https://github.com/horacehoff/wintrace",
             lang: "HTML/CSS/JS/Python"
         },
         {
             name: "Mango Engine",
             desc: "A small ASCII graphics engine",
+            url: "https://github.com/horacehoff/mango-engine",
             lang: "C++"
         },
         {
             name: "Sah",
             desc: "An abandoned programming language that was meant to be performant",
+            url: "https://github.com/horacehoff/sah",
             lang: "Python"
         },
         {
             name:"CubicTerrainGen",
             desc:"An Unreal Engine 5 project that generates minecraft-like terrain using sine waves",
+            url: "https://github.com/horacehoff/CubicTerrainGen",
             lang: "Blueprint"
         },
         {
             name: "Colored Python",
             desc: "A super-lightweight python module to print colored text to the terminal easily",
+            url: "https://github.com/horacehoff/coloredpython",
             lang: "Python"
         },
         {
             name: "Mango",
             desc: "A half-complete programming language written with ease of use in mind",
+            url: "https://github.com/horacehoff/mango",
             lang: "Python"
         },
         {
             name: "Pass-Gen",
             desc: "A tiny password generator",
+            url: "https://github.com/horacehoff/pass-gen",
             lang: "C++/Python"
         },
         {
             name: "Ball Madness",
             desc: "An open-source retro platformer developed in Unreal Engine",
+            url: "https://github.com/horacehoff/ball-madness",
             lang: "Blueprint"
         },
         {
             name: "Fabric Mod Generator",
             desc: "A minecraft modding program that generates a starter fabric mod for you to start modding right away",
+            url: "https://github.com/horacehoff/fabricmodgenerator",
             lang: "Python"
         },
         {
             name: "Mosk",
             desc: "A Minecraft mod project which aims at improving the game in a vanilla-like way",
+            url: "https://github.com/horacehoff/mosk",
             lang: "Java"
         },
         {
             name: "Volcanic Evolution (5K+ downloads)",
             desc: "A minecraft mod that adds more armors/weapons/ores",
+            url: "https://www.curseforge.com/minecraft/mc-mods/volcanic-evolution",
             lang: "Java"
         },
         {
             name: "Simpler Options (6K+ downloads)",
             desc: "A minecraft mod that simplifies complex mod settings to make them as Vanilla-like as possible",
+            url: "https://www.curseforge.com/minecraft/mc-mods/simpler-options",
             lang: "Java"
         },
         {
             name: "Unrestrict",
             desc: "A minecraft mod that removes the new controversial reporting features introduced by Mojang in 1.19.1",
+            url: "https://github.com/horacehoff/unrestrict",
             lang: "Java"
         },
         {
             name: "Dreams",
             desc: "A minecraft mod that adds an aether-like 'Dreams' dimension",
+            url: "https://github.com/horacehoff/Dreams",
             lang: "Java"
         },
         {
             name: "Vertical Slabs",
             desc: "A minecraft mod that adds vertical slabs",
+            url: "https://github.com/horacehoff/VerticalSlabs",
             lang: "Java"
         },
         {
             name: "This website",
-            desc: "(I needed another project so that the total number would be even)",
+            desc: "(I needed affffnother project so that the total number would be even)",
             lang: "Vite/React(JS)"
         }
     ]
@@ -212,26 +234,23 @@ function Home() {
         const element = document.getElementById(elementId);
         const maxScroll = element.scrollWidth - element.clientWidth; // Max scroll position
         const startTime = performance.now();
-        let direction = 1; // 1 for forward, -1 for backward
-        let anim_duration = duration
+        let anim_duration = duration;
+
+        function easeInOutQuad(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        }
 
         function scrollStep(currentTime) {
             const elapsed = (currentTime - startTime) % (2 * anim_duration); // Looping every 2 * duration for back and forth
-            const progress = elapsed / anim_duration; // Progress from 0 to 1
+            const progress = elapsed / anim_duration; // Progress from 0 to 2
+            const easedProgress = easeInOutQuad(progress % 1); // Apply easing function
 
-
-
-            if (progress > 1) {
-
-                // Reverse direction for the second half of the loop
-                if (x === 1) {
-                    sleep(1000)
-                    element.scrollLeft = maxScroll - (maxScroll * (progress - 1));
-                } else {
-                    element.scrollLeft = maxScroll - (maxScroll * (progress - 1));
-                }
+            if (progress < 1) {
+                // Scrolling from left to right
+                element.scrollLeft = maxScroll * easedProgress;
             } else {
-                    element.scrollLeft = maxScroll * progress;
+                // Scrolling from right to left
+                element.scrollLeft = maxScroll * (1 - easedProgress);
             }
 
             requestAnimationFrame(scrollStep); // Continue animation
@@ -240,31 +259,63 @@ function Home() {
         requestAnimationFrame(scrollStep);
     }
 
+
+
+
     function WordCount(str) {
         return str.split(' ')
             .filter(function(n) { return n !== '' })
             .length;
     }
 
+    function rotateBg() {
+        setTimeout(() => {
+            document.querySelector(".bg:nth-of-type(2)").style.opacity = 1
+            document.querySelector(".bg:first-of-type").style.opacity = 0
+            setTimeout(() => {
+                document.querySelector(".bg:nth-of-type(3)").style.opacity = 1
+                document.querySelector(".bg:nth-of-type(2)").style.opacity = 0
+                setTimeout(() => {
+                    document.querySelector(".bg:nth-of-type(1)").style.opacity = 1
+                    document.querySelector(".bg:nth-of-type(3)").style.opacity = 0
+                    rotateBg()
+                }, 5000)
+            }, 5000)
+
+        },5000)
+
+    }
+
     useEffect(() => {
         document.querySelectorAll('.scrolling-text').forEach(element => {
-            let elem = document.getElementById(element.id)
-            // if (element.scrollWidth !== element.innerWidth) {
+            // let elem = document.getElementById(element.id)
+            // if (element.scrollWidth < element.innerWidth) {
             //     console.log("overflows")
                 slowScroll(element.id, WordCount(document.getElementById(element.id).innerText) / 2 * 1000); // 3 seconds scroll duration
             // }
         });
+
+        rotateBg();
+
+
     }, [])
 
   return (
       <>
+          <img className="bg" src={Saturn} alt="Saturn"/>
+          <img className="bg" src={Moon} alt="The surface of the Moon"/>
+          <img className="bg" src={Roadster} alt="A Tesla Roadster in space"/>
+          <div className="bg"></div>
+          <div className="bg"></div>
           <div className="bg"></div>
           <pre ref={asciiTextRef} id="testpre"></pre>
-          <a className="cta" id="cta-mail" href="mailto:horace.hoff@gmail.com" target="_blank"><span className="emojifix" style={{
+          <a className="cta" id="cta-mail" href="mailto:horace.hoff@gmail.com" target="_blank"><span
+              className="emojifix" style={{
               position: "relative",
               marginRight: "6px"
           }}>✉️</span>Contact me</a>
-          <a className="cta" id="cta-github" href="https://github.com/horacehoff" target="_blank" style={{marginLeft: "13px"}}>
+          <a className="cta" id="cta-github" href="https://github.com/horacehoff" target="_blank"
+             style={{marginLeft: "13px"}}>
               <svg width="24px" height="24px" strokeWidth="1.9" viewBox="0 0 24 24" fill="none"
                    xmlns="http://www.w3.org/2000/svg" color="white">
                   <path
@@ -290,29 +341,29 @@ function Home() {
               LinkedIn</a>
           <br/><br/>
           <h1>Hi, I'm Horace.</h1>
-          <h2>I love imagining and creating rockets, robots, programs, and websites. I'm passionate about space, coding, technology, math, physics, and sometimes skateboarding.</h2>
-          <h3>(Most of) My projects.</h3>
+          <h2>I love imagining and creating rockets, robots, programs, and websites. I'm passionate about space, coding,
+              technology, math, physics, and sometimes skateboarding.</h2>
+          <h3>(Most of) My projects:</h3>
+          {/*{*/}
+          {/*    ["C++","Python","Java","Javascript","Rust","Blueprint","HTML/CSS"].map((data, ind) =>*/}
+          {/*        <>*/}
+          {/*          <span className="project-lang" id={"lang"+ind} onClick={() => {*/}
+          {/*              let elem = document.getElementById("lang"+ind)*/}
+          {/*              if (elem.style.filter === "brightness(0.4)") {*/}
+          {/*                  document.getElementById("lang"+ind).style.filter = null*/}
+          {/*              } else {*/}
+          {/*                  document.getElementById("lang"+ind).style.filter = "brightness(0.4)"*/}
+          {/*              }*/}
+          {/*          }}>{data}</span>*/}
+          {/*        </>*/}
+          {/*    )*/}
+          {/*}*/}
+
           <ul className="projects">
               {
                   repositories.map((data, index) =>
                       <>
-                          <li key={index}
-                          //     onMouseEnter={() => {
-                          //     isProjectHovered = true
-                          //     if (document.getElementById(index).scrollLeft === 0) {
-                          //         slowScroll(index, 3000)
-                          //     }
-                          // }}
-                          //     onMouseLeave={() => {
-                          //         isProjectHovered = false
-                          //         if (document.getElementById(index).scrollLeft === document.getElementById(index).scrollWidth - document.getElementById(index).clientWidth) {
-                          //             document.getElementById(index).scrollTo({
-                          //                 left: 0,
-                          //                 behavior: "smooth"
-                          //             })
-                          //         }
-                          // }}
-                          >
+                          <li key={index}>
                               <a href={data.url} target="_blank">
                                   <h4>{data.name} <span>{data.lang}</span></h4>
                                   <h5 id={index} className="no-scrollbar scrolling-text">{data.desc}</h5>
@@ -324,7 +375,7 @@ function Home() {
           </ul>
 
       </>
-  )
-}
+          )
+          }
 
-export default Home
+          export default Home
