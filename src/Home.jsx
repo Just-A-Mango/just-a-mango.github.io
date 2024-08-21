@@ -364,7 +364,7 @@ function Home() {
                   repositories.map((data, index) =>
                       <>
                           <li key={index}>
-                              <a href={data.url} target="_blank">
+                              <a href={data.url} target="_blank" title={data.name}>
                                   <h4>{data.name} <span>{data.lang}</span></h4>
                                   <h5 id={index} className="no-scrollbar scrolling-text">{data.desc}</h5>
                               </a>
