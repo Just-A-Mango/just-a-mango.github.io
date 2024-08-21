@@ -111,7 +111,7 @@ pre {
     left: -50px;
     width: calc(var(--project-width) * 2 + 50px);
     height: fit-content;
-    background-color: red;
+    /*background-color: red;*/
 }
 .projects li {
     transition: 0.2s;
@@ -125,7 +125,7 @@ pre {
     padding: 10px;
     z-index: 1;
     position: relative;
-    background-color: black;
+    /*background-color: black;*/
 }
 .projects li:nth-child(1n) {
     right: 5px;
