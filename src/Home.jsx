@@ -302,12 +302,12 @@ function Home() {
 
   return (
       <>
-          <img className="bg" src={Saturn} alt="Saturn"/>
-          <img className="bg" src={Moon} alt="The surface of the Moon"/>
-          <img className="bg" src={Roadster} alt="A Tesla Roadster in space"/>
-          <div className="bg"></div>
-          <div className="bg"></div>
-          <div className="bg"></div>
+          <img className="bg" decoding="async" loading="lazy" src={Saturn} alt="Saturn"/>
+          <img className="bg" decoding="async" loading="lazy" src={Moon} alt="The surface of the Moon"/>
+          <img className="bg" decoding="async" loading="lazy" src={Roadster} alt="A Tesla Roadster in space"/>
+          {/*<div className="bg"></div>*/}
+          {/*<div className="bg"></div>*/}
+          {/*<div className="bg"></div>*/}
           <pre ref={asciiTextRef} id="testpre"></pre>
           <a className="cta" id="cta-mail" href="mailto:horace.hoff@gmail.com" target="_blank"><span
               className="emojifix" style={{
