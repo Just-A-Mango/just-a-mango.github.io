@@ -48,7 +48,6 @@ function Home() {
             name: "DOUBLE16",
             desc: "A code marketplace made for buying and selling code snippets",
             url: "https://github.com/horacehoff/double16",
-            banner: "./assets/double16.png",
             lang: "Vite/React(JS)"
         },
         {
