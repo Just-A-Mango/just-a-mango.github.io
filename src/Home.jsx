@@ -4,6 +4,7 @@ import {useEffect} from "react";
 import Saturn from "./bg/saturn.avif"
 import Moon from "./bg/moon.avif"
 import Roadster from "./bg/roadster.avif"
+import Earthrise from "./bg/earthrise.avif"
 
 
 function Home() {
@@ -278,12 +279,15 @@ function Home() {
                 document.querySelector(".bg:nth-of-type(3)").style.opacity = 1
                 document.querySelector(".bg:nth-of-type(2)").style.opacity = 0
                 setTimeout(() => {
-                    document.querySelector(".bg:nth-of-type(1)").style.opacity = 1
+                    document.querySelector(".bg:nth-of-type(4)").style.opacity = 1
                     document.querySelector(".bg:nth-of-type(3)").style.opacity = 0
-                    rotateBg()
+                    setTimeout(() => {
+                        document.querySelector(".bg:nth-of-type(1)").style.opacity = 1
+                        document.querySelector(".bg:nth-of-type(4)").style.opacity = 0
+                        rotateBg()
+                    }, 5000)
                 }, 5000)
             }, 5000)
-
         },5000)
 
     }
@@ -307,9 +311,7 @@ function Home() {
           <img className="bg" decoding="async" loading="lazy" src={Saturn} alt="Saturn"/>
           <img className="bg" decoding="async" loading="lazy" src={Moon} alt="The surface of the Moon"/>
           <img className="bg" decoding="async" loading="lazy" src={Roadster} alt="A Tesla Roadster in space"/>
-          {/*<div className="bg"></div>*/}
-          {/*<div className="bg"></div>*/}
-          {/*<div className="bg"></div>*/}
+          <img className="bg" decoding="async" loading="lazy" src={Earthrise} alt="Earthrise"/>
           <pre ref={asciiTextRef} id="testpre"></pre>
           <a className="cta" id="cta-mail" href="mailto:horace.hoff@gmail.com" target="_blank"><span
               className="emojifix" style={{

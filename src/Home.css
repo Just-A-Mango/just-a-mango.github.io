@@ -97,6 +97,10 @@ pre {
     filter: brightness(0.22);
     opacity: 0;
 }
+.bg:nth-of-type(4) {
+    filter: brightness(0.22);
+    opacity: 0;
+}
 
 
 
