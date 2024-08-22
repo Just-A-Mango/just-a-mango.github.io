@@ -226,13 +226,6 @@ function Home() {
         }
     ]
 
-
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-
-    // let isProjectHovered = false;
     function slowScroll(elementId, duration) {
         const element = document.getElementById(elementId);
         const maxScroll = element.scrollWidth - element.clientWidth; // Max scroll position
