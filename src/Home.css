@@ -181,6 +181,12 @@ pre {
     outline: 0;
     text-transform: uppercase;
 }
+/*@media (prefers-color-scheme: dark) {*/
+/*    .projects li a h4 span {*/
+/*        color: white;*/
+/*        background-color: rgb(24, 26, 27);*/
+/*    }*/
+/*}*/
 .project-lang {
     font-family: "JetBrains Mono", monospace;
     font-size: 13px;
@@ -255,6 +261,17 @@ pre {
     color: white;
     background-color: black;
 }
+/*@media (prefers-color-scheme: dark) {*/
+/*    .projects li:hover {*/
+/*        color: white;*/
+/*        background-color: rgb(24, 26, 27);*/
+/*        border-color: rgb(48, 52, 54);*/
+/*    }*/
+/*    .projects li:hover a h4 span {*/
+/*        color: white;*/
+/*        background-color: black;*/
+/*    }*/
+/*}*/
 /*.projects li:hover a h5 {*/
 /*    white-space: initial !important;*/
 /*    overflow: initial !important;*/
