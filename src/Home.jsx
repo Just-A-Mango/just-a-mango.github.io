@@ -225,33 +225,29 @@ function Home() {
         }
     ]
 
-    function slowScroll(elementId, duration) {
-        const element = document.getElementById(elementId);
-        const maxScroll = element.scrollWidth - element.clientWidth; // Max scroll position
+    function slowScroll(id, duration) {
+        const element = document.getElementById(id);
+        const maxScroll = element.scrollWidth - element.clientWidth;
         const startTime = performance.now();
-        let anim_duration = duration;
 
-        function easeInOutQuad(t) {
-            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        function easeInOutQuad(x) {
+            return x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
         }
 
-        function scrollStep(currentTime) {
-            const elapsed = (currentTime - startTime) % (2 * anim_duration); // Looping every 2 * duration for back and forth
-            const progress = elapsed / anim_duration; // Progress from 0 to 2
-            const easedProgress = easeInOutQuad(progress % 1); // Apply easing function
+        function addScroll(currentTime) {
+            const progress = ((currentTime - startTime) % (2 * duration)) / duration;
+            const easedProgress = easeInOutQuad(progress % 1);
 
             if (progress < 1) {
-                // Scrolling from left to right
                 element.scrollLeft = maxScroll * easedProgress;
             } else {
-                // Scrolling from right to left
                 element.scrollLeft = maxScroll * (1 - easedProgress);
             }
 
-            requestAnimationFrame(scrollStep); // Continue animation
+            requestAnimationFrame(addScroll);
         }
 
-        requestAnimationFrame(scrollStep);
+        requestAnimationFrame(addScroll);
     }
 
 
